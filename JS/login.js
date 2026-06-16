@@ -34,7 +34,7 @@ form.addEventListener("submit", function (e) {
     if (valid) {
 
         // Backend integration later
-        window.location.href = "index.html";
+        window.location.href = "home.html";
 
     }
 
