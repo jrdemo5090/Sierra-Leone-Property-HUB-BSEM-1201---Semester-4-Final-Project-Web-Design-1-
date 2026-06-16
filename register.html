@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Salone Property Hub</title>
+
+    <link rel="stylesheet" href="css/register.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- LEFT PANEL -->
+    <div class="left">
+
+        <div class="brand">
+            <img src="images/logo.png" alt="SPH Logo">
+            <h1>Salone Property Hub</h1>
+        </div>
+
+        <span class="badge">Verified Property Platform</span>
+
+        <h2>Create Your Property Account.</h2>
+
+        <p>
+            Join Sierra Leone's trusted digital property marketplace.
+            Access verified land listings, houses, investment opportunities,
+            and property management services from one secure platform.
+        </p>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right">
+
+        <form id="registerForm" novalidate>
+
+            <h2>Create Account</h2>
+            <p class="subtitle">Get started in minutes</p>
+
+            <div class="grid">
+
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input
+                        type="text"
+                        id="fullname"
+                        placeholder="Enter your full name"
+                    >
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email address"
+                    >
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter your phone number"
+                    >
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="nin">National ID / NIN</label>
+                    <input
+                        type="text"
+                        id="nin"
+                        placeholder="Enter your NIN"
+                    >
+                    <small class="error-message"></small>
+                </div>
+
+               <div class="form-group">
+            <label for="district">District</label>
+
+            <select id="district">
+                <option value="">Select your district</option>
+
+                <option>Bo</option>
+                <option>Bombali</option>
+                <option>Bonthe</option>
+                <option>Falaba</option>
+                <option>Kailahun</option>
+                <option>Kambia</option>
+                <option>Karene</option>
+                <option>Kenema</option>
+                <option>Koinadugu</option>
+                <option>Kono</option>
+                <option>Moyamba</option>
+                <option>Port Loko</option>
+                <option>Pujehun</option>
+                <option>Tonkolili</option>
+                <option>Western Area Urban</option>
+                <option>Western Area Rural</option>
+            </select>
+
+            <small class="error-message"></small>
+            </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Create a password"
+                    >
+                    <small class="error-message"></small>
+                </div>
+
+            </div>
+
+            <div class="form-group full-width">
+                <label for="confirmPassword">Confirm Password</label>
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm your password"
+                >
+                <small class="error-message"></small>
+            </div>
+
+            <button type="submit">
+                Create Account  
+            </button>
+
+            <p class="switch">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </p>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="js/register.js"></script>
+
+</body>
+</html>

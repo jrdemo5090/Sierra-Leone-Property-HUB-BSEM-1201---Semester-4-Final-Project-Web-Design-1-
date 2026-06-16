@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */  
+
+body{
+    font-family: 'Inter', sans-serif;
+    background: #0B3D2E;
+    overflow: hidden;
+}
+
+/* SPLASH CONTAINER */
+
+.splash-container{
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+/* BACKGROUND CIRCLES */
+
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(201, 162, 39, 0.08);
+}
+
+.circle.one{
+    width: 400px;
+    height: 400px;
+
+    top: -150px;
+    left: -150px;
+}
+
+.circle.two{
+    width: 350px;
+    height: 350px;
+
+    bottom: -120px;
+    right: -120px;
+}
+
+/* MAP OUTLINE */
+
+.map-outline{
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    border: 2px solid rgba(255,255,255,0.04);
+
+    clip-path: polygon(
+        20% 10%,
+        70% 8%,
+        90% 30%,
+        85% 60%,
+        70% 85%,
+        40% 90%,
+        18% 75%,
+        10% 45%
+    );
+
+    opacity: 0.3;
+}
+
+/* CONTENT */
+
+.content{
+    text-align: center;
+    z-index: 10;
+    padding: 20px;
+}
+
+/* LOGO */
+
+.logo{
+    width: 160px;
+    margin-bottom: 30px;
+
+    animation: floatLogo 3s ease-in-out infinite;
+}
+
+/* TITLE */
+
+.content h1{
+    color: #FFFFFF;
+    font-size: 4rem;
+    font-weight: 700;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 18px;
+}
+
+/* PARAGRAPH */
+
+.content p{
+    color: rgba(255,255,255,0.75);
+
+    font-size: 1.1rem;
+    line-height: 1.7;
+
+    max-width: 600px;
+
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+/* LOADER */
+
+.loader{
+    width: 70px;
+    height: 70px;
+
+    border: 6px solid rgba(255,255,255,0.1);
+    border-top: 6px solid #C9A227;
+
+    border-radius: 50%;
+
+    margin: auto;
+    margin-bottom: 20px;
+
+    animation: spin 1s linear infinite;
+}
+
+/* LOADING TEXT */
+
+.loading-text{
+    color: #FFFFFF;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+/* SPINNER ANIMATION */
+
+@keyframes spin{
+
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* FLOATING LOGO */
+
+@keyframes floatLogo{
+
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width: 768px){
+
+    .logo{
+        width: 120px;
+    }
+
+    .content h1{
+        font-size: 2.5rem;
+    }
+
+    .content p{
+        font-size: 1rem;
+    }
+
+    .loader{
+        width: 60px;
+        height: 60px;
+    }
+
+    .map-outline{
+        width: 320px;
+        height: 320px;
+    }
+}
+
+@media(max-width: 480px){
+
+    .content h1{
+        font-size: 2rem;
+    }
+
+    .content p{
+        font-size: 0.95rem;
+    }
+
+    .logo{
+        width: 100px;
+    }
+}
+

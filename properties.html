@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties | Salone Property Hub</title>
+
+    <link rel="stylesheet" href="css/properties.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo-area">
+            <img src="images/logo.png" alt="SPH Logo">
+            <span>Salone Property Hub</span>
+        </a>
+
+        <button class="hamburger" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links">
+            <li><a class="hov" href="index.html">Home</a></li>
+            <li><a class="hov" href="about.html">About</a></li>
+            <li><a class="hov" href="services.html">Services</a></li>
+            <li><a class="hov" href="properties.html" class="active">Properties</a></li>
+            <li><a class="hov" href="surveyors.html">Surveyors</a></li>
+            <li><a class="hov" href="contact.html">Contact</a></li>
+            <li class="nav-buttons-mobile">
+                <a href="#" class="dashboard-btn">Dashboard</a>
+                <a href="login.html" class="logout-btn">Logout</a>
+            </li>
+        </ul>
+
+        <div class="nav-buttons">
+            <a href="#" class="dashboard-btn">Dashboard</a>
+            <a href="login.html" class="logout-btn">Logout</a>
+        </div>
+
+    </nav>
+
+</header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="properties-hero">
+
+    <div class="hero-wrapper">
+
+        <span class="hero-badge">
+            <i class="fa-solid fa-building-circle-check"></i>
+            Verified Marketplace Across Sierra Leone
+        </span>
+
+        <h1>
+            Discover Verified Properties, Lands & Investment Opportunities
+        </h1>
+
+        <p class="hero-intro">
+            Browse government-verified properties across all districts of Sierra Leone. Find residential homes, commercial buildings, agricultural lands and premium investment opportunities with confidence.
+        </p>
+
+        <div class="hero-search">
+
+            <select>
+                <option>Select District</option>
+                <option>Western Urban</option>
+                <option>Western Rural</option>
+                <option>Bo</option>
+                <option>Bombali</option>
+                <option>Bonthe</option>
+                <option>Falaba</option>
+                <option>Kailahun</option>
+                <option>Kambia</option>
+                <option>Karene</option>
+                <option>Kenema</option>
+                <option>Koinadugu</option>
+                <option>Kono</option>
+                <option>Moyamba</option>
+                <option>Port Loko</option>
+                <option>Pujehun</option>
+                <option>Tonkolili</option>
+            </select>
+
+            <select>
+                <option>Property Type</option>
+                <option>Land</option>
+                <option>House</option>
+            </select>
+
+            <select>
+                <option>Any Price</option>
+                <option>Below Le 100,000</option>
+                <option>Le 100,000 - 500,000</option>
+                <option>Le 500,000+</option>
+            </select>
+
+            <button class="search-btn">
+                Search
+            </button>
+
+        </div>
+
+        <div class="hero-stats">
+
+            <div>
+                <h3>5,000+</h3>
+                <span>Listings</span>
+            </div>
+
+            <div>
+                <h3>3,500+</h3>
+                <span>Verified Records</span>
+            </div>
+
+            <div>
+                <h3>16</h3>
+                <span>Districts</span>
+            </div>
+
+            <div>
+                <h3>2,000+</h3>
+                <span>Successful Transactions</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    </section>
+
+
+<!-- ================= PROPERTY CATEGORIES ================= -->
+
+<section class="property-categories">
+
+    <div class="section-header">
+        <h2>Property Categories</h2>
+        <p>
+            Browse different categories of verified properties and land opportunities across Sierra Leone.
+        </p>
+    </div>
+
+    <div class="category-grid">
+
+        <div class="category-card">
+
+            <div class="category-icon">
+                <i class="fa-solid fa-house"></i>
+            </div>
+
+            <h3>Residential Properties</h3>
+
+            <p>
+                Family homes, apartments, duplexes and residential estates located in prime communities.
+            </p>
+
+            <span>1,500+ Listings</span>
+
+        </div>
+
+        <div class="category-card">
+
+            <div class="category-icon">
+                <i class="fa-solid fa-building"></i>
+            </div>
+
+            <h3>Commercial Properties</h3>
+
+            <p>
+                Office buildings, retail spaces, warehouses and commercial investment opportunities.
+            </p>
+
+            <span>850+ Listings</span>
+
+        </div>
+
+        <div class="category-card">
+
+            <div class="category-icon">
+                <i class="fa-solid fa-seedling"></i>
+            </div>
+
+            <h3>Agricultural Land</h3>
+
+            <p>
+                Productive farmlands suitable for agriculture, plantations and large-scale farming projects.
+            </p>
+
+            <span>1,100+ Listings</span>
+
+        </div>
+
+        <div class="category-card">
+
+            <div class="category-icon">
+                <i class="fa-solid fa-chart-line"></i>
+            </div>
+
+            <h3>Investment Opportunities</h3>
+
+            <p>
+                High-growth locations with excellent development and long-term investment potential.
+            </p>
+
+            <span>600+ Listings</span>
+
+        </div>
+
+    </div>
+
+</section>
+  
+<!-- ================= PROPERTY EXPLORER ================= -->
+<section class="property-explorer">
+
+<div class="section-header">
+    <h2>Find Your Next Property Investment</h2>
+    <p>
+        Browse verified homes, lands, commercial properties, agricultural estates and investment opportunities across Sierra Leone.
+    </p>
+</div>
+
+<div class="property-tabs">
+    <button class="active">All Properties</button>
+    <button>Residential</button>
+    <button>Commercial</button>
+    <button>Agricultural</button>
+    <button>Investment</button>
+</div>
+
+<div class="properties-container">
+
+<!-- ========== RESIDENTIAL / COMMERCIAL (6) ========== -->
+
+<div class="property-card" data-id="aberdeen" data-type="property">
+    <img src="images/home/property 1.jpg">
+    <div class="property-info">
+        <h3>Modern Family House</h3>
+        <p class="location"><i class="fa-solid fa-location-dot"></i> Aberdeen</p>
+        <p class="property-desc">Beautiful family residence with modern design.</p>
+        <div class="property-meta">
+            <span>4 Bedrooms</span><span>3 Bathrooms</span>
+        </div>
+        <span class="property-price">Le 850,000</span>
+        <button class="view-btn">View Details</button>
+    </div>
+</div>
+
+<div class="property-card" data-id="lumley" data-type="property">
+    <img src="images/home/property 2.jpg">
+    <div class="property-info">
+        <h3>Luxury Villa</h3>
+        <p class="location"><i class="fa-solid fa-location-dot"></i> Lumley</p>
+        <p class="property-desc">Luxury villa with ocean proximity.</p>
+        <div class="property-meta">
+            <span>5 Bedrooms</span><span>5 Bathrooms</span>
+        </div>
+        <span class="property-price">Le 1,500,000</span>
+        <button class="view-btn">View Details</button>
+    </div>
+</div>
+
+<div class="property-card" data-id="bo-apartment" data-type="property">
+    <img src="images/home/property 3.jpg">
+    <div class="property-info">
+        <h3>3 Bedroom Apartment</h3>
+        <p class="location"><i class="fa-solid fa-location-dot"></i>Bo City</p>
+        <p class="property-desc">Modern apartment in Bo City.</p>
+        <div class="property-meta">
+            <span>3 Bedrooms</span><span>2 Bathrooms</span>
+        </div>
+        <span class="property-price">Le 500,000</span>
+        <button class="view-btn">View Details</button>
+    </div>
+</div>
+
+<div class="property-card" data-id="tokeh" data-type="property">
+    <img src="images/home/property 4.jpg">
+    <div class="property-info">
+        <h3>Beach House</h3>
+        <p class="location"><i class="fa-solid fa-location-dot"></i>Tokeh</p>
+        <p class="property-desc">Beachfront ocean view property.</p>
+        <div class="property-meta">
+            <span>4 Bedrooms</span><span>4 Bathrooms</span>
+        </div>
+        <span class="property-price">Le 1,200,000</span>
+        <button class="view-btn">View Details</button>
+    </div>
+</div>
+
+<div class="property-card" data-id="hill" data-type="property">
+    <img src="images/home/property 5.jpg">
+    <div class="property-info">
+        <h3>Executive Duplex</h3>
+        <p class="location"><i class="fa-solid fa-location-dot"></i>Hill Station</p>
+        <p class="property-desc">Modern duplex in prime area.</p>
+        <div class="property-meta">
+            <span>4 Bedrooms</span><span>4 Bathrooms</span>
+        </div>
+        <span class="property-price">Le 950,000</span>
+        <button class="view-btn">View Details</button>
+    </div>
+</div>
+
+<div class="property-card" data-id="central-freetown" data-type="property">
+    <img src="images/home/property 6.jpg">
+    <div class="property-info">
+        <h3>Commercial Building</h3>
+        <p class="location"><i class="fa-solid fa-location-dot"></i>Central Freetown</p>
+        <p class="property-desc">Prime commercial investment building.</p>
+        <div class="property-meta">
+            <span>Offices</span><span>Facilities</span>
+        </div>
+        <span class="property-price">Le 2,500,000</span>
+        <button class="view-btn">View Details</button>
+    </div>
+</div>
+
+<!-- ========== LAND (6) ========== -->
+
+<div class="property-card" data-id="waterloo" data-type="land">
+    <img src="images/home/land 1.jpg">
+    <div class="property-info">
+        <h3>Waterloo Land</h3>
+        <p class="location"><i class="fa-solid fa-location-dot"></i>Waterloo</p>
+        <p class="property-desc">2 Acres verified land.</p>
+        <div class="property-meta">
+            <span>2 Acres</span><span>Verified</span>
+        </div>
+        <span class="property-price">Le 250,000</span>
+        <button class="view-btn">View Details</button>
+    </div>
+</div>
+
+<div class="property-card" data-id="bo-land" data-type="land">
+    <img src="images/home/land 2.jpg">
+    <div class="property-info">
+        <h3>Bo City Land</h3>
+        <p class="location"><i class="fa-solid fa-location-dot"></i>Bo City</p>
+        <p class="property-desc">Residential land.</p>
+        <div class="property-meta">
+            <span>1.5 Acres</span><span>Verified</span>
+        </div>
+        <span class="property-price">Le 180,000</span>
+        <button class="view-btn">View Details</button>
+    </div>
+</div>
+
+<div class="property-card" data-id="makeni-land" data-type="land">
+    <img src="images/home/land 3.jpg">
+    <div class="property-info">
+        <h3>Makeni Land</h3>
+        <p class="location"><i class="fa-solid fa-location-dot"></i>Makeni</p>
+        <p class="property-desc">Investment land.</p>
+        <div class="property-meta">
+            <span>3 Acres</span><span>Verified</span>
+        </div>
+        <span class="property-price">Le 400,000</span>
+        <button class="view-btn">View Details</button>
+    </div>
+</div>
+
+<div class="property-card" data-id="kono-land" data-type="land">
+    <img src="images/home/land 4.jpg">
+    <div class="property-info">
+        <h3>Kono Land</h3>
+        <p class="location"><i class="fa-solid fa-location-dot"></i>Kono</p>
+        <p class="property-desc">Development land.</p>
+        <div class="property-meta">
+            <span>2.5 Acres</span><span>Verified</span>
+        </div>
+        <span class="property-price">Le 350,000</span>
+        <button class="view-btn">View Details</button>
+    </div>
+</div>
+
+<div class="property-card" data-id="kenema-land" data-type="land">
+    <img src="images/home/land 5.jpg">
+    <div class="property-info">
+        <h3>Kenema Land</h3>
+        <p class="location"><i class="fa-solid fa-location-dot"></i>Kenema</p>
+        <p class="property-desc">Agricultural land.</p>
+        <div class="property-meta">
+            <span>4 Acres</span><span>Verified</span>
+        </div>
+        <span class="property-price">Le 450,000</span>
+        <button class="view-btn">View Details</button>
+    </div>
+</div>
+
+<div class="property-card" data-id="portloko-land" data-type="land">
+    <img src="images/home/land 6.jpg">
+    <div class="property-info">
+        <h3>Port Loko Land</h3>
+        <p class="location"><i class="fa-solid fa-location-dot"></i>Port Loko</p>
+        <p class="property-desc">Residential land.</p>
+        <div class="property-meta">
+            <span>1 Acre</span><span>Verified</span>
+        </div>
+        <span class="property-price">Le 150,000</span>
+        <button class="view-btn">View Details</button>
+    </div>
+</div>
+
+<!-- ========== EXTRA 6 (NOW INCLUDED = TOTAL 18) ========== -->
+
+<div class="property-card" data-id="freetown-penthouse" data-type="property">
+    <img src="./images/property/property 13.jpeg">
+    <div class="property-info">
+        <h3>Freetown Penthouse</h3>
+        <p class="location"><i class="fa-solid fa-location-dot"></i>Freetown</p>
+        <p class="property-desc">Luxury penthouse view.</p>
+        <div class="property-meta"><span>5 Bedrooms</span><span>5 Bathrooms</span></div>
+        <span class="property-price">Le 3,200,000</span>
+        <button class="view-btn">View Details</button>
+    </div>
+</div>
+
+<div class="property-card" data-id="tonkolili-land" data-type="land">
+    <img src="./images/property/property 16.jpeg">
+    <div class="property-info">
+        <h3>Tonkolili Farmland</h3>
+        <p class="location"><i class="fa-solid fa-location-dot"></i>Tonkolili</p>
+        <p class="property-desc">Large farmland investment.</p>
+        <div class="property-meta"><span>6 Acres</span><span>Verified</span></div>
+        <span class="property-price">Le 600,000</span>
+        <button class="view-btn">View Details</button>
+    </div>
+</div>
+
+<div class="property-card" data-id="kenema-bungalow" data-type="property">
+    <img src="./images/property/property 14.jpeg">
+    <div class="property-info">
+        <h3>Kenema Bungalow</h3>
+        <p class="location"><i class="fa-solid fa-location-dot"></i>Kenema</p>
+        <p class="property-desc">Modern family bungalow.</p>
+        <div class="property-meta"><span>3 Bedrooms</span><span>2 Bathrooms</span></div>
+        <span class="property-price">Le 780,000</span>
+        <button class="view-btn">View Details</button>
+    </div>
+</div>
+
+<div class="property-card" data-id="bonthe-land" data-type="land">
+    <img src="./images/property/property 17.jpeg">
+    <div class="property-info">
+        <h3>Bonthe Island Land</h3>
+        <p class="location"><i class="fa-solid fa-location-dot"></i>Bonthe</p>
+        <p class="property-desc">Coastal development land.</p>
+        <div class="property-meta"><span>3 Acres</span><span>Verified</span></div>
+        <span class="property-price">Le 500,000</span>
+        <button class="view-btn">View Details</button>
+    </div>
+</div>
+
+<div class="property-card" data-id="makeni-plaza" data-type="property">
+    <img src="./images/property/property 15.jpeg">
+    <div class="property-info">
+        <h3>Makeni Plaza</h3>
+        <p class="location"><i class="fa-solid fa-location-dot"></i>Makeni</p>
+        <p class="property-desc">Commercial plaza.</p>
+        <div class="property-meta"><span>Shops</span><span>Offices</span></div>
+        <span class="property-price">Le 1,800,000</span>
+        <button class="view-btn">View Details</button>
+    </div>
+</div>
+
+<div class="property-card" data-id="western-farmland" data-type="land">
+    <img src="./images/property/property 18.jpeg">
+    <div class="property-info">
+        <h3>Western Rural Farmland</h3>
+        <p class="location"><i class="fa-solid fa-location-dot"></i>Western Rural</p>
+        <p class="property-desc">Large fertile farmland.</p>
+        <div class="property-meta"><span>10 Acres</span><span>Verified</span></div>
+        <span class="property-price">Le 900,000</span>
+        <button class="view-btn">View Details</button>
+    </div>
+</div>
+
+</div>
+</section>
+<!-- ================= PROPERTY HOTSPOTS ================= -->
+<section class="property-hotspots">
+
+    <div class="section-header">
+
+        <h2>Explore Property Hotspots</h2>
+
+        <p>
+            Discover Sierra Leone's fastest-growing property markets and investment destinations.
+        </p>
+
+    </div>
+
+    <div class="hotspots-grid">
+
+        <div class="hotspot-card">
+
+            <div class="hotspot-icon">
+                <i class="fa-solid fa-city"></i>
+            </div>
+
+            <h3>Freetown</h3>
+
+            <p>
+                The country's largest property market with strong residential and commercial demand.
+            </p>
+
+            <div class="hotspot-tags">
+                <span>620 Listings</span>
+                <span>High Demand</span>
+            </div>
+
+        </div>
+
+        <div class="hotspot-card">
+
+            <div class="hotspot-icon">
+                <i class="fa-solid fa-building"></i>
+            </div>
+
+            <h3>Bo City</h3>
+
+            <p>
+                A rapidly expanding urban center attracting residential and commercial developments.
+            </p>
+
+            <div class="hotspot-tags">
+                <span>340 Listings</span>
+                <span>Growing Market</span>
+            </div>
+
+        </div>
+
+        <div class="hotspot-card">
+
+            <div class="hotspot-icon">
+                <i class="fa-solid fa-chart-line"></i>
+            </div>
+
+            <h3>Kenema</h3>
+
+            <p>
+                An emerging investment destination with increasing land and housing demand.
+            </p>
+
+            <div class="hotspot-tags">
+                <span>285 Listings</span>
+                <span>Investment Zone</span>
+            </div>
+
+        </div>
+
+        <div class="hotspot-card">
+
+            <div class="hotspot-icon">
+                <i class="fa-solid fa-road"></i>
+            </div>
+
+            <h3>Makeni</h3>
+
+            <p>
+                Benefiting from rapid development and infrastructure expansion.
+            </p>
+
+            <div class="hotspot-tags">
+                <span>220 Listings</span>
+                <span>Urban Growth</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= LIST PROPERTY CTA ================= -->
+
+<section class="list-property-cta">
+
+    <div>
+        <h2>Ready To List Your Property?</h2>
+
+        <p>
+            Reach thousands of potential buyers and investors across Sierra Leone with our verified platform.
+        </p>
+    </div>
+
+    <button id="openListingModal" class="cta-btn">
+        Get Started
+        <i class="fa-solid fa-arrow-right"></i>
+    </button>
+
+</section>
+
+<!-- ================= LAND DETAILS MODAL ================= -->
+
+<div class="modal" id="landModal">
+
+    <div class="modal-content large-modal">
+
+        <span class="close-modal">&times;</span>
+
+        <img
+            id="landModalImage"
+            src="images/lands/land1.jpg"
+            alt="Land Image"
+        >
+
+        <div class="modal-details">
+
+            <h2 id="landTitle">
+                Waterloo Development Land
+            </h2>
+
+            <div class="detail-grid">
+
+                <div>
+                    <strong>Location:</strong>
+                    <span id="landLocation">
+                        Waterloo, Western Rural
+                    </span>
+                </div>
+
+                <div>
+                    <strong>Price:</strong>
+                    <span id="landPrice">
+                        Le 250,000
+                    </span>
+                </div>
+
+                <div>
+                    <strong>Size:</strong>
+                    <span id="landSize">
+                        2 Acres
+                    </span>
+                </div>
+
+                <div>
+                    <strong>Status:</strong>
+                    <span id="landStatus">
+                        Available
+                    </span>
+                </div>
+
+            </div>
+
+            <h3>Description</h3>
+
+            <p id="landDescription">
+
+                Prime development land situated in Waterloo with
+                excellent road access, verified ownership documents,
+                survey plan and strong investment potential.
+
+            </p>
+
+            <h3>Features</h3>
+
+            <ul>
+
+                <li>Verified Ownership Documents</li>
+                <li>Survey Plan Available</li>
+                <li>Road Access</li>
+                <li>Electricity Available</li>
+                <li>Suitable For Residential Development</li>
+                <li>Government Approved Area</li>
+
+            </ul>
+
+            <h3>Owner Information</h3>
+
+            <div class="seller-info">
+
+                <p>
+                    <strong>Owner:</strong>
+                    Ibrahim Sesay
+                </p>
+
+                <p>
+                    <strong>Phone:</strong>
+                    +232 76 123456
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    ibrahimsesay@gmail.com
+                </p>
+
+            </div>
+
+            <div class="contact-actions">
+
+                <a href="tel:+23276123456" class="call-btn">
+                    Call Owner
+                </a>
+
+                <a href="mailto:ibrahimsesay@gmail.com" class="email-btn">
+                    Email Owner
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= PROPERTY DETAILS MODAL ================= -->
+
+<div class="modal" id="propertyModal">
+
+    <div class="modal-content large-modal">
+
+        <span class="close-modal">&times;</span>
+
+        <img
+            id="propertyModalImage"
+            src="images/properties/property1.jpg"
+            alt="Property Image"
+        >
+
+        <div class="modal-details">
+
+            <h2 id="propertyTitle">
+                Modern Family House
+            </h2>
+
+            <div class="detail-grid">
+
+                <div>
+                    <strong>Location:</strong>
+                    <span id="propertyLocation">
+                        Aberdeen, Freetown
+                    </span>
+                </div>
+
+                <div>
+                    <strong>Price:</strong>
+                    <span id="propertyPrice">
+                        Le 850,000
+                    </span>
+                </div>
+
+                <div>
+                    <strong>Bedrooms:</strong>
+                    <span id="propertyBedrooms">
+                        4 Bedrooms
+                    </span>
+                </div>
+
+                <div>
+                    <strong>Bathrooms:</strong>
+                    <span id="propertyBathrooms">
+                        3 Bathrooms
+                    </span>
+                </div>
+
+            </div>
+
+            <h3>Description</h3>
+
+            <p id="propertyDescription">
+
+                Beautiful family residence located in Aberdeen.
+                Features spacious living areas, modern kitchen,
+                secure compound, parking area and uninterrupted
+                water supply.
+
+            </p>
+
+            <h3>Property Features</h3>
+
+            <ul id="propertyFeatures">
+
+                <li>Verified Ownership Documents</li>
+
+                <li>Secure Residential Community</li>
+
+                <li>Reliable Water Supply</li>
+
+                <li>Stable Electricity Connection</li>
+
+                <li>Motorable Access Road</li>
+
+                <li>Private Compound</li>
+
+                <li>Excellent Investment Potential</li>
+
+                <li>Ready For Immediate Occupancy</li>
+
+            </ul>
+
+            <h3>Seller Information</h3>
+
+            <div class="seller-info">
+
+                <p>
+                    <strong>Seller:</strong>
+                    Mariama Kamara
+                </p>
+
+                <p>
+                    <strong>Phone:</strong>
+                    +232 78 654321
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    mariamakamara@gmail.com
+                </p>
+
+            </div>
+
+            <div class="contact-actions">
+
+                <a href="tel:+23278654321" class="call-btn">
+                    Call Seller
+                </a>
+
+                <a href="mailto:mariamakamara@gmail.com" class="email-btn">
+                    Email Seller
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     LISTING MODAL
+========================== -->
+<div class="modal" id="listingModal">
+
+    <div class="modal-content listing-modal">
+
+        <span class="close-listing">&times;</span>
+
+        <div class="modal-header">
+            <h2>List Your Property</h2>
+            <p>Submit your property for review and publication.</p>
+        </div>
+
+        <form id="listingForm" class="listing-form">
+
+            <div class="form-section">
+
+                <h3>Owner Information</h3>
+
+                <input type="text" placeholder="Full Name" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <input type="email" placeholder="Email Address" required>
+
+            </div>
+
+            <div class="form-section">
+
+                <h3>Property Information</h3>
+
+                <select required>
+                    <option value="">Property Type</option>
+                    <option>House</option>
+                    <option>Apartment</option>
+                    <option>Villa</option>
+                    <option>Land</option>
+                    <option>Commercial</option>
+                </select>
+
+                <select required>
+                    <option value="">District</option>
+                    <option>Freetown</option>
+                    <option>Bo</option>
+                    <option>Kenema</option>
+                    <option>Makeni</option>
+                    <option>Port Loko</option>
+                </select>
+
+                <input type="text" placeholder="Property Title" required>
+                <textarea placeholder="Description" rows="4" required></textarea>
+
+                <input type="number" placeholder="Price (Le)" required>
+                <input type="number" placeholder="Bedrooms">
+                <input type="number" placeholder="Bathrooms">
+                <input type="text" placeholder="Size (e.g. 2 Acres)">
+
+                <input type="file" multiple accept="image/*">
+
+            </div>
+
+            <div class="form-actions">
+
+                <button type="submit" class="submit-btn">Submit Listing</button>
+                <button type="button" class="cancel-btn">Cancel</button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+  <footer>
+
+    <div class="footer-grid">
+
+        <div>
+
+            <h3>Salone Property Hub</h3>
+
+            <p>
+                Secure Digital Property Services for Sierra Leone.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="properties.html">Properties</a>
+
+        </div>
+
+        <div>
+
+            <h3>Land Services</h3>
+
+            <a href="lands.html">Available Lands</a>
+            <a href="verify.html">Verify Land</a>
+            <a href="surveyors.html">Surveyors</a>
+
+        </div>
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>+232 76 123 456</span>
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>info@sph.gov.sl</span>
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Freetown, Sierra Leone</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 Salone Property Hub. All Rights Reserved.
+    </div>
+
+</footer>
+    <script src="js/properties.js"></script>
+
+</body>
+</html>

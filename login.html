@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Salone Property Hub</title>
+
+    <link rel="stylesheet" href="css/login.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- LEFT PANEL -->
+    <div class="left">
+
+        <div class="brand">
+            <img src="images/logo.png" alt="SPH Logo">
+            <h1>Salone Property Hub</h1>
+        </div>
+
+        <span class="badge">Trusted Property Marketplace</span>
+
+        <h2>Find Land, Houses & Investment Opportunities.</h2>
+
+        <p>
+            Securely buy, sell and discover verified properties across Sierra Leone.
+            Connect with trusted sellers and manage your property journey in one place.
+        </p>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right">
+
+        <form id="loginForm" novalidate>
+
+            <h2>Welcome Back</h2>
+            <p class="subtitle">Login to continue</p>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email address"
+                >
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                >
+                <small class="error-message"></small>
+            </div>
+
+            <button type="submit">
+                Login
+            </button>
+            
+            <p class="switch">
+                Don't have an account?
+                <a href="register.html">Create Account</a>
+            </p>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="js/login.js"></script>
+
+</body>
+</html>
